@@ -1,0 +1,12 @@
+-Make a function that takes an integer input, performs the factorial, and returns the result to main
+-Then make a function that saves main to a text file
+
+Approach:
+	-input int to first function, move to ecx
+	-use mul ecx, loop to perform factorial
+	-function leaves factorial in eax
+
+	-for second function, divide eax by ten
+	-remainder is saved to edx
+	-add edx, '0'
+	-write edx to output file (append)
